@@ -1,0 +1,569 @@
+/*--------------GENERAL CLASSES----------------------*/
+.white_text_color{
+	color: white;
+}
+
+.nav a{
+	color: white;
+}
+
+body{
+	background-image: url('media/bckimg.jpg');
+	background-size: cover;
+	color: white;
+	font-family: verdana, sans-serif;
+	overflow-y: scroll;
+	/*overflow-x: hidden;*/
+	
+}
+.text_center{
+	margin: 0;
+	text-align: center;
+}
+
+/*=========================MENU======================*/
+#geeksh_logo{
+	display: inline-block;
+	border: 2px solid white;
+	list-style-type: none;
+	text-decoration: none;
+	border-radius: 2px;
+	font-size: 1.5em;
+	margin:  0.6em 0.2em 0em 0.5em;
+ 	 font-family: agency;
+	line-height: 1.3em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	color: white;
+}
+
+#geeksh_logo:hover, #geeksh_logo:visited{
+	color: white;
+	text-decoration: none;
+	background-color: rgb(180,180,180);
+	transition: 2s ease;
+}
+
+
+
+#motto{
+	margin-left: 16px;
+	font-family: "bauhaus 93";
+	font-size: 1.7rem;
+
+}
+
+.navbar-inverse{
+	background-color:  #2F4F4F;
+	border-color: white;
+
+}
+
+.navbar-inverse .navbar-nav li  a{
+	color: white;
+	font-size: 1.1em;
+	text-transform: ;
+	font-weight: bold;
+	font-family: "agency";
+	margin-right: 1em;
+	display: inline-block;
+	padding-top: 0px;
+	margin-top: 15px;
+}
+
+.dropdown .dropdown-menu li  a{
+	color: black;
+}
+
+#search_section {
+	margin-top: 12px;
+	display: inline-block;
+
+}
+#search_section input{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	border-radius: 10px;
+}
+#search_section button{
+	border-radius: 10px;
+}
+
+.navbar-inverse .navbar-nav li  a:hover{
+	
+	margin-bottom: 0px;
+	background-color: white;
+	color:  #088d8a;
+	transition: 0.6s ease;
+}
+
+.navbar-inverse .navbar-nav  li .active  a{
+	background-color: white;
+}
+
+.nav-link{
+	background-color: ;
+}
+
+.navbar-inverse .navbar-collapse{
+	border-color: white;
+}
+
+.navbar-inverse{
+	margin-bottom: 0px;
+}
+
+#collapsing_ul{
+	margin-right: ;
+}
+
+.carousel-inner button{
+	border-radius: 10px;
+	color: white;
+	font-family: "agency FB";
+	font-size: 2rem;
+
+}
+
+#welcome_section{
+	background-color: ghostWhite;
+	text-align: center;
+	width: 100%;
+	transition: 1s ease;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+
+#welcome_text{
+	display: inline-block;
+	color: darkCyan;
+	font-family: "bauhaus 93";
+	font-weight: bold;
+	font-size: 2vw;
+	padding: 0;
+
+
+	
+}
+#welcome_text p{
+	padding: 0;
+	margin: 0;
+}
+
+
+#arrow_mover:hover{
+	
+	margin-left: 30px;
+	margin-right: 30px;
+	transition: 1s ease;
+}
+#left_welcome_arrow{
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 1s ease;
+}
+
+
+.soccial_media_btn{
+	width: 30%;
+	min-width: 100px;
+	margin-bottom: 5px;
+}
+
+.soccial_media_btn_lg{
+	display: inline-block;
+	margin-bottom: 5px;
+	width: 45%;
+	
+	
+}
+/*=======================MENU END===================*/
+
+/*==============homepic and courousel=================*/
+#navtrick{
+	display: inline-block;
+	height: 50px;
+	width: auto;
+}
+
+
+
+
+
+#homepic_img{
+	width: 200px;
+	height: 200px;
+	padding: 10px auto;
+}
+
+.carousel-caption{
+	color: ;
+	font-family: "anton";
+	font-size: 20px;
+
+}
+
+.carousel .item{
+	max-height: 400px;
+	min-height: 100%;
+	width: 100%;
+	;
+}
+
+.item img {
+	min-height: 100%;
+}
+
+.carousel_profile_section{
+	
+	background-color: rgba(255,255,255, 0.5);
+	border: 1px solid white;
+	text-align: center;
+	
+}
+
+#carousel, #carousel div {
+	padding: 0px;
+	margin: 0px;
+}
+
+.homepic_img{
+	height: 100px;	
+	width: 100px;
+	marging-top: 50px;
+}
+
+.homepic_container{
+	margin-top: 10px;
+}
+
+.img-thumbnail{
+	border-radius: 50%;
+}
+
+.carousel-inner {
+border-radius: 5px 5px 5px 5px;
+border: 5px solid white;
+border-top: none;
+}
+
+hr{
+	width: 200px;
+}
+
+#mymodal1{
+	display: none;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.7);
+	overflow: hidden;
+	animation-name: animationtop;
+	animation-duration: 0.5s;
+}
+
+@keyframes animationtop{
+	from {top: -300px; opacity: 0;	}
+	to { top: 0; opacity: 1; }
+}
+
+ /*@-webkit-keyframes animationtop{
+ 	from {top: -300px; opacity: 0;	}
+	to { top: 0; opacity: 1;
+ }*/
+
+#mymodal_img_container{
+	width: 300px;
+	padding-top: 150px;
+	margin: auto;
+
+}
+	
+#mymodal1 img{
+	width: 300px;
+	height: auto;
+	border: 10px solid white;
+	border-radius: 20px;
+	
+}
+
+.close_icon {
+	font-size: 30px;
+	cursor: pointer;
+	
+}
+
+.big_img{
+	display: none;
+}
+
+#des{
+	color: black;
+	background-color: ghostwhite;
+	border-radius: 10px;
+	padding: 5px;
+
+
+}
+
+#active-link a span {
+	padding: 0;
+	margin: 0;
+}
+
+#des-link{
+	font-family: 'Lobster', cursive;
+	color: black;
+}
+
+/*======================services section=================*/
+
+#serv_sec{
+	background-color: #2F4F4F;
+	padding-bottom: 30px;
+	text-align: center;
+
+}
+
+#services_header{
+	font-family: 'Lobster', cursive;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+#services_header_text{
+	width: 80%;
+	margin: 0px auto;
+}
+
+#services_offered {
+	margin: 1px auto;
+
+	
+}
+
+#services_offered  img{
+	width: 120px;
+	height: 80px;
+	margin: 40px auto;
+	margin-bottom: 0;
+}
+
+#services_offered  hr{
+	width: 100px;	
+}
+
+#services_offered  h4{
+	width: 100px;
+	font-family: "book antiqua";
+}
+
+#services_offered  p{
+	font-family: "verdana";
+	margin-bottom: 0px;
+	width: 20rem;
+	margin: 0px auto;
+	
+}
+
+#services_offered  button{
+	border-radius: 10px;
+	margin-top: 1px;
+	background-color: transparent;
+	border-color: black;
+	
+}
+
+#geeksh_img_container{
+	display: ;
+	width: 100%;
+	border: 2px solid white;
+	border-right: none;
+	border-left: none;
+}
+
+#geeksh_big_img{
+	
+	background: url('media/geeksh2.jpg');
+	background-size: contain;
+	background-position: center;
+	position: relative;
+	background-size: cover;
+	border-bottom: 2px solid white;
+	width: 100%;
+	height: 100%;
+	font-size: 5rem;
+	margin: 0px;
+}
+
+
+
+#geeksh_img_content{
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	font-family: "serif";
+	font-weight: bold;
+	color: ghostwhite;	
+}
+#geeksh_img_content p{
+	margin-bottom: 0px;
+	padding-top: 2rem;
+
+}
+#newsletters_input_container{
+	padding-right: 25%;
+	padding-left: 25%;
+	
+}
+
+#newsletters_input_container input{
+	border-radius: 10px;
+	text-align: center;
+	
+	
+}
+
+#newsletters_input_container label{
+	font-size: 2rem;
+	margin-top: 0;
+	padding-top: 0;
+	display: block;
+}
+
+#newsletters_input_container .glyphicon .glyphicon-envelope{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.icon-prev, .icon-next{
+	background-color: white;
+	color: black;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+/*================third section==========*/
+
+#th_section{
+	background-color: #FFF;
+	
+
+}
+
+#geek_laptop{
+	background-color: white;
+	z-index: 1000;
+}
+
+#laptop_bg_img{
+	width: 100%;
+	height: 20%;
+	margin: 5% auto;
+}
+
+#th_section .well{
+	color: black;
+	font-size: 1.5rem;
+	font-family: "Perpetua Titling MT Bold";
+	margin-top: 5%;
+	
+}
+
+
+#latest_production{
+	color: black;
+	background-color: ghostwhite;
+	text-align: center;
+
+}
+
+#latest_production h3{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-family: lobster;
+}
+
+#latest_production .post_time{
+	font-size: 1rem;
+	
+}
+
+#latest_production hr{
+	width: 100%;
+	border-color: #2F4F4F ;
+}
+
+#latest_production p{
+	padding-bottom: 0px;
+	text-transform: uppercase;
+}
+
+#latest_video video{
+	width: 100%;
+	height: 230px;
+	border: 5px solid #2F4F4F;
+	border-radius: 5px;
+
+}
+
+.news_title{
+	color: #2F4F4F;
+}
+#foot{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+footer{
+	padding-top: 20px;
+	background-color: #2F4F4F;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 
+	
+}
+
+.footer_link_contacts {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+.footer_link{
+	color: white;
+	display: inline-block;
+	margin: 3px;
+
+}
+
+.footer_link:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.footer_title{
+	font-size: 2em;
+	font-family: "agency fb";
+}
+
+#footer_geeksh{
+	font-size: 8rem;
+	text-align: center;
+	
+	margin: 0px;
+	padding: 0px;
+	font-family: "ALGERIAN"
+}
+
+.progress-bar{
+	width: 50%;
+}
