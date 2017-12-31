@@ -6,6 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="refresh" content="100">
 	<meta http-equiv="X-UA-Compatible" content="ID=edge">
+    <link rel="icon" type="image/jpg" href="../../CSS/media/geeksh_logo.jpg"/>
+
+    <!-- SCROLL REVEAL  JS  -->
+    <script type="text/javascript" src="../../js/scrollreveal/dist/scrollreveal.js"> </script>
+    <script>
+        window.sr = ScrollReveal();
+    </script>
+
+    <!-- CSS AND BOOTSRAPT   -->
 	<link rel="stylesheet" type="text/css" href="../../CSS/bootstrap-3.3.7/dist/css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="../../CSS/custom_css.css">
 	<link rel="stylesheet" type="text/css" href="../../CSS/font-awesome.css">
@@ -13,7 +22,7 @@
 </head>
 
 
-<body data-spy="scroll" data-target=".nav">
+<body data-spy="scroll" data-target="#mainnavbar" data-offset="100">
 	
 	<div id="mymodal1" >
 	
@@ -24,40 +33,48 @@
 			<img class="big_img" src="../../CSS/media/homepic7.jpg">
 			</div>
 	</div>
-	
-	<header>
-		<?php include('../INCLUDES/nav.php'); ?>
-	</header>
 
-	<div class="container carousel_profile_section">
-		<div class="row">
-			<aside  class="col-lg-4">
-				<div class="row">
-					<div class="col-lg-12 homepic_container" id="thumbnail_container">
-					<a href="#"><img id="img_circle1" class="img-thumbnail homepic_img" src="../../CSS/media/homepic5.jpg"></a>
-					<a href="#"><img id="img_circle2" class="img-thumbnail homepic_img" src="../../CSS/media/homepic3.jpg"></a>
-					<a href="#"><img id="img_circle3" class="img-thumbnail homepic_img" src="../../CSS/media/homepic7.jpg"></a>
-					</div>
-				
-				<div id="des_side" class="col-lg-12">
-					<hr>
-					<h3 id="des-link">Aboubacar Sidiki Camara </h3>
-					<hr>
-					<div id="des" class="">
-						<p > 
-						Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise qui suscite un vif intérêt tant pour mon avenir professionnel que.
-						</p>
-						<button id="ld_button" type="button" class=" soccial_media_btn_lg btn btn-default btn-sm"> <i class="fa fa-linkedin-square"></i><a href="#"> </a>linkedin </button>
-						<button id="git_button" type="button" class=" soccial_media_btn_lg btn btn-default btn-sm"> <i class="fa fa-github-square"></i><a href="#"> </a>github </button>
-						
-						<button id="fb_button" type="button" class=" soccial_media_btn btn btn-primary btn-sm"><span class="fa fa-facebook-square"></span> <a href="#"> </a>facebook </button>
-						<button id="yt_button" type="button" class=" soccial_media_btn btn btn-danger btn-sm"> <i class="fa fa-youtube-square"></i><a href="#"> </a>youtube </button>
-						<button id="yt_twitter" type="button" class=" soccial_media_btn btn btn-info btn-sm"> <i class="fa fa-twitter-square"></i><a href="#"> </a>twitter </button>
-					</div>
-				</div>
-				</div>
-			</aside> 
-			
+    <header>
+        <?php require('../INCLUDES/nav.php'); ?>
+    </header>
+
+	    <div  class="container">
+
+        <div id="" class="">
+
+            <div id="welcome_section" class="welcome_ctner visible-xs visible-sm visible-lg col-sm-12">
+                <p id="welcome_text"> <~<span id="" > WELCOME ON GEEKSH </span>~></p>
+            </div>
+        </div>
+            <div class="visible-xs" id="space"></div>
+        <section id="carousel_sec" class="carousel_profile_section">
+		    <div class="row">
+			    <aside  class="col-lg-4">
+				    <div class="row">
+					    <div class="col-lg-12 homepic_container" id="thumbnail_container">
+                            <a href="#"><img id="img_circle1" class="img-thumbnail homepic_img" src="../../CSS/media/homepic5.jpg"></a>
+                            <a href="#"><img id="img_circle2" class="img-thumbnail homepic_img" src="../../CSS/media/homepic3.jpg"></a>
+                            <a href="#"><img id="img_circle3" class="img-thumbnail homepic_img" src="../../CSS/media/homepic7.jpg"></a>
+                        </div>
+                    </div>
+                    <div id="des_side" class="row">
+                        <hr>
+                        <h3 id="geek_name">Aboubacar Sidiki Camara </h3>
+                        <hr>
+                    </div>
+                    <div id="des" class="row">
+                        <p >
+                            Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise qui suscite un vif intérêt tant pour mon avenir professionnel que.
+                        </p>
+                        <button id="ld_button" type="button" class=" soccial_media_btn_lg btn btn-default btn-sm"> <i class="fa fa-linkedin-square"></i><a href="#"> </a>linkedin </button>
+                        <button id="git_button" type="button" class=" soccial_media_btn_lg btn btn-default btn-sm"> <i class="fa fa-github-square"></i><a href="#"> </a>github </button>
+
+                        <button id="fb_button" type="button" class=" soccial_media_btn btn btn-primary btn-sm"><span class="fa fa-facebook-square"></span> <a href="#"> </a>facebook </button>
+                        <button id="yt_button" type="button" class=" soccial_media_btn btn btn-danger btn-sm"> <i class="fa fa-youtube-square"></i><a href="#"> </a>youtube </button>
+                        <button id="yt_twitter" type="button" class=" soccial_media_btn btn btn-info btn-sm"> <i class="fa fa-twitter-square"></i><a href="#"> </a>twitter </button>
+                    </div>
+			    </aside>
+
 				<div id="carousel" class="carousel slide col-lg-8">
 					<ol class="carousel-indicators">
 						<li data-target="#carousel" data-slide-to="0" class="active"> </li>
@@ -84,169 +101,113 @@
 
 					</div>
 				</div>
-		
-		</div>
-	</div>
 
-
-
-	<section id="serv_sec" class="container" >
-		<div class="row">
-		<h2 id="services_header"> WHAT TO FIND ON GEEKSH</h2>
-		<p id="services_header_text">Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise qui suscite un vif intérêt tant pour mon avenir professionnel que pour l’exercice de mes capacités à votre service en qualité de technicien. Je vous fais parvenir par la présente, une demande d.</p>
-		
 		</div>
-		<div id="services_offered" class="row ">
-			<div id="Web_dev" class="col-lg-3 col-md-6 col-sm-6">
-				<a href="#"><img src="../../CSS/media/webdev3.png"  class="thumbnail"></a>
-				<hr>
-				<h3> Web Dev</h3>
-				<p>Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise. </p>
-				<button type="button" href="#" class=" btn-primary ">en savoir plus <span class="glyphicon glyphicon-play"></span></button></a>
-			</div>
-			<div id="networking" class="col-lg-3 col-md-6 col-sm-6">
-				<a href="#"><img id="webdev_img" src="../../CSS/media/netserv2.jpg" class="thumbnail"></a>
-				<hr>
-				<h3> Réseaux</h3>
-				<p>Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise.</p>
-				<a href="#"><button type="button" href="#" class=" btn-primary ">en savoir plus <span class="glyphicon glyphicon-play"></span></button></a>
-			</div>
-			<div id="Software_dev" class="col-lg-3 col-md-6 col-sm-6">
-				<a href="#"><img src="../../CSS/media/softdev2.jpg"  class="thumbnail"></a>
-				<hr>
-				<h3> Soft Dev</h3>
-				<p>Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise.</p>
-				<button type="button" href="#" class=" btn-primary ">en savoir plus <span class="glyphicon glyphicon-play"></span></button></a>
-			</div>
-			<div id="geeklife" class="col-lg-3 col-md-6 col-sm-6">
-				<a href="#"><img src="../../CSS/media/geeksh.jpg"  class="thumbnail"></a>
-				<hr>
-				<h3> Geek Share</h3>
-				<p> Je vous fais parvenir par la présente, une demande de stage au sein de votre entreprise.</p>
-				<button type="button" href="#" class=" btn-primary">en savoir plus <span class="glyphicon glyphicon-play"></span></button></a>
-			</div>
-		</div>
-		
 	</section>
-	
-	<div class="container">
-		
 
-		<div id="th_section" >
-		
+        <section id="page_about">
+            <div id="section_title" class="row">
+                <h2 class="lucida_fnt"> About Geeksh</h2>
+                <div id="underline_bar" class=" hidden-sm hidden-xs"> <div id="line_cercle" ><span class="fa fa-arrow-circle-down mycaret"></span> </div> </div>
+                <div id="underline_bar" class="pull-left visible-xs visible-sm hidden-md hidden-lg"> <div id="line_cercle" ><span class="fa fa-arrow-circle-down mycaret"></span> </div> </div>
+            </div>
 
-			
+            <div id="about_content" class="row">
+                <div id="who_am_i" class="col-lg-12 about_content_reveal myjumb">
+                    <h4> < Who Am I ? /></h4>
+                    <hr>
+                    <p class="trebuchet_fnt">
+                        He'll want to use your yacht, and I don't want this thing smelling like fish. I'm half machine. I'm a monster.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
 
-			<div class="row" id="latest_production" > 
-				<div =" latest_articles" class="col-lg-4 col-sm-6"> 
-					<h3 class="news_title"> Articles Récentes</h3>
-					<div id="article_bg">
-						<div class="article_sample">
-							<p id="article1" class="article"> Ipsum lorem ipsum dolor <span class="post_time"> 02-10-2017 | 20:20:02 </span></p>
-						<span class="hidden-xs"><hr></span>
-						</div>
+                    </p>
+                </div>
 
-						<div class="article_sample">
-							<p id="article2" class="article"> Ipsum lorem ipsum dolor <span class="post_time"> 02-10-2017 | 20:20:02 </span></p>
-						<span class="hidden-xs"><hr></span>
-						</div>
+                <div id="who_am_i" class="col-lg-12 about_content_reveal myjumb">
+                    <h4> < What Is Geeksh ? /></h4>
+                    <hr>
+                    <p class="trebuchet_fnt">
+                        He'll want to use your yacht, and I don't want this thing smelling like fish. I'm half machine. I'm a monster.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+                        He'll want to use your yacht, and I don't want this thing smelling like fish. I'm half machine. I'm a monster.
+                    </p>
+                </div>
 
-						<div class="article_sample">
-							<p id="article3" class="article"> Ipsum lorem ipsum dolor <span class="post_time"> 02-10-2017 | 20:20:02 </span></p>
-						<span class="hidden-xs"><hr></span>
-						</div>
+                <div id="who_am_i" class="col-lg-12 about_content_reveal myjumb">
+                    <h4> < Want To Get In Touch ? /></h4>
+                    <hr>
+                    <p class="trebuchet_fnt">
+                        He'll want to use your yacht, and I don't want this thing smelling like fish. I'm half machine. I'm a monster.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+                        He'll want to use your yacht, and I don't want this thing smelling like fish. I'm half machine. I'm a monster.
+                        Steve Holt! No, I did not kill Kitty. However, I am going to oblige and answer the nice officer's questions because I am an honest man with no secrets to hide.
+                    </p>
+                </div>
 
-						<div class="article_sample">
-							<p id="article3" class="article"> Ipsum lorem ipsum dolor  <span class="post_time"> 02-10-2017 | 20:20:02 </span></p>
-						</div>
-						<span class="hidden-xs"><hr></span>
-					</div>	
-				</div>
+            </div>
 
-				<div class="col-lg-4 col-sm-6" id="latest_tuto" >
-					<h3 class="news_title"> Tutoriels Récentes</h3>
-					<div class="toto_sample">
-						<p id="tuto1" class="tutos"> Ipsum lorem ipsum dolor <span class="post_time"> 02-10-2017 | 20:20:02 </span></p>
-						<span class="hidden-xs"><hr></span>
-					</div>
 
-					<div class="toto_sample">
-						<p id="tuto2" class="tutos"> Ipsum lorem ipsum dolor <span class="post_time"> 26-08-2017 | 20:20:02 </span></p>
-					<span class="hidden-xs"><hr></span>
-					</div>
 
-					<div class="toto_sample">
-						<p id="tuto3" class="tutos"> Ipsum lorem ipsum dolor <span class="post_time"> 26-08-2017 | 20:20:02 </span></p>
-					<span class="hidden-xs"><hr></span>
-					</div>
+        </section>
 
-					<div class="toto_sample">
-						<p id="tuto4" class="tutos"> Ipsum lorem ipsum dolor <span class="post_time"> 26-08-2017 | 20:20:02 </span></p>
-						<span class="hidden-xs"><hr></span>
-					</div>
+        <section id="page_tutos" class="">
+            <div id="section_title" class="row">
+                <h2 class="lucida_fnt"> Tutoriels</h2>
+                <div id="underline_bar" class=" hidden-sm hidden-xs"> <div id="line_cercle" ><span class="fa fa-arrow-circle-down mycaret"></span> </div> </div>
+                <div id="underline_bar" class="pull-left visible-xs visible-sm hidden-md hidden-lg"> <div id="line_cercle" ><span class="fa fa-arrow-circle-down mycaret"></span> </div> </div>
+            </div>
+            <div id="tuto_container" class="row">
 
-				</div>
+                        <div class="col-lg-12 ">
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_left" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">garder la tete haute<br> <?= ' '.date('Y-m-d H:i:s')?> </a> </p>
 
-				<div class="col-lg-4 " id="latest_video">
-					<h3 class="news_title"> Vidéos Récentes</h3>
-					<div class="video_border"><video  loop controls src="../../CSS/media/ILINK.mp4"></video></div>
-				</div>
-			
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_left" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">ne pas s'affoler surtout et encore <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_right" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">maintenir la forme<br> <?= ' '.date('Y-m-d H:i:s')?></a> </p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_right" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">redemander la chance change it <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_left" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">approche en douceur <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_left" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">gaming su le tas et sur le mil <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_right" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">npm et node.js en detail <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
+                            <div>
+                                <iframe class="jumbotron tutos_reveal_right" src="http://www.youtube.com/embed/VmnIeLmjuHA"> <</iframe>
+                                <p> <a href="#">Telecharger gratos sur le net <br> <?= ' '.date('Y-m-d H:i:s')?></a></p>
+                            </div>
 
-			</div>
 
-		</div>
+                        </div>
 
-		<section class="row">
-			<div id="geeksh_img_container">
-				<div id="geeksh_big_img"> 
-					
-					<div id="dark_bg"> </div>
-					<div id="geeksh_img_content">
-						<p><span class="hidden-xs"><</span> RESTER GEEKSH <span class="hidden-xs">/></span> </p>
-						<form action="#" method="post">
-							<div id="newsletters_input_container"> 
-								<span id="newsletters_user_icon" class="glyphicon glyphicon-envelope"></span>
-								<label class=""> abonnez-vous aux newsletters</label>
-								<input type="email" name="newsletters_email" class="form-control" placeholder="votre mail...">
-							</div>
-							<button type="button" class="btn btn-primary" value="valider"> Soumettre </button>
-						</form>
-					</div>
-				</div>
+                        <div id="all_link_div" class="col-lg-12 ">
+                            <a class="btn btn-primary" id="all_tutos">< All Tutos /></a>
+                        </div>
+            </div>
+        </section>
+    </div>
 
-			</div>
 
-		</section>
-		<footer>
-			<div class="row" id="foot">
-				<div class="col-lg-4">
-					<p class="footer_title"> Check Out</p>
-					<ul class="footer_link_ressources">
-					
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-"></span> Services</a></li>
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-"></span> Geeksh Tutorials</a></li>
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-gears"></span> Geeksh campaigns</a></li>
-						
-					</ul>
-				</div>
-				<div class="col-lg-4">
-					<p class="footer_title"> Reach Out</p>
-					<ul class="footer_link_contacts">
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-phone"></span> +221 77 571 76 82</a></li>
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-phone"></span> +221 77 710 05 29</a></li>
-						<li> <a class="footer_link" href="mailto:absi.camara@outlook.fr"><span class="glyphicon glyphicon-envelope">  	</span>  Envoyer un mail</a></li>
-						
-					</ul>
-				</div>
-				<div class="col-lg-4">
-					<p id="footer_geeksh"> GEEKSH </p>
-				</div>
-			</div>
-		</footer>
-		
-		
-	</div>
+
+
 	
 	
 	
@@ -261,6 +222,7 @@
 			interval: 5000
 		})
 	});
+
  </script>
 
 </body>

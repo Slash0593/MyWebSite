@@ -3,17 +3,16 @@
 	color: white;
 }
 
-.nav a{
-	color: white;
-}
 
 body{
 	background-image: url('media/bckimg.jpg');
 	background-size: cover;
 	color: white;
 	font-family: verdana, sans-serif;
-	overflow-y: scroll;
-	/*overflow-x: hidden;*/
+	/*padding: 0;*/
+	margin: 0;
+	width: 100%;
+	padding-top: 80px;
 	
 }
 .text_center{
@@ -21,16 +20,35 @@ body{
 	text-align: center;
 }
 
+.trebuchet_fnt{
+	font-family: "trebuchet", sans-serif;
+}
+.lucida_fnt{
+	font-family: "Lucida Bright", serif;
+}
+
+
+
 /*=========================MENU======================*/
+
+#navtree{
+	background-color:  #2F4F4F;
+}
+
+.navbar {
+
+}
+
 #geeksh_logo{
+    text-align: center;
 	display: inline-block;
 	border: 2px solid white;
 	list-style-type: none;
 	text-decoration: none;
 	border-radius: 2px;
 	font-size: 1.5em;
-	margin:  0.6em 0.2em 0em 0.5em;
- 	 font-family: agency;
+	margin:  0.6em 0.2em 0 7px;
+ 	 font-family: agency, sans-serif;
 	line-height: 1.3em;
 	padding-right: 0.5em;
 	padding-left: 0.5em;
@@ -44,12 +62,19 @@ body{
 	transition: 2s ease;
 }
 
+#collapsing_ul{
+    text-align: center;
 
+}
+#collapsing_ul a:hover{
+    color: #2F4F4F;
+    transition: 1s ease;
+}
 
 #motto{
-	margin-left: 16px;
-	font-family: "bauhaus 93";
-	font-size: 1.7rem;
+	font-family: "bauhaus 93", sans-serif;
+	font-size: 1.4em;
+    margin-left: 7px;
 
 }
 
@@ -62,13 +87,13 @@ body{
 .navbar-inverse .navbar-nav li  a{
 	color: white;
 	font-size: 1.1em;
-	text-transform: ;
 	font-weight: bold;
-	font-family: "agency";
+	font-family: "agency", sans-serif;
 	margin-right: 1em;
 	display: inline-block;
-	padding-top: 0px;
+	padding-top: 0;
 	margin-top: 15px;
+    width: 100%;
 }
 
 .dropdown .dropdown-menu li  a{
@@ -90,8 +115,8 @@ body{
 }
 
 .navbar-inverse .navbar-nav li  a:hover{
-	
-	margin-bottom: 0px;
+
+	margin-bottom: 0;
 	background-color: white;
 	color:  #088d8a;
 	transition: 0.6s ease;
@@ -101,54 +126,45 @@ body{
 	background-color: white;
 }
 
-.nav-link{
-	background-color: ;
-}
 
 .navbar-inverse .navbar-collapse{
 	border-color: white;
 }
 
 .navbar-inverse{
-	margin-bottom: 0px;
-}
-
-#collapsing_ul{
-	margin-right: ;
+	margin-bottom: 0;
 }
 
 .carousel-inner button{
 	border-radius: 10px;
 	color: white;
-	font-family: "agency FB";
+	font-family: "agency FB", sans-serif;
 	font-size: 2rem;
 
 }
 
+#space{
+    background-color: red;
+    display: block;
+    width: 200px:
+    height: 900px;
+}
 #welcome_section{
+    display: inline-block;
 	background-color: ghostWhite;
 	text-align: center;
 	width: 100%;
 	transition: 1s ease;
-	padding-bottom: 0px;
-	margin-top: 0px;
+	padding-bottom: 0;
+	margin-top: 0;
 	padding-top: 15px;
 }
 
 #welcome_text{
-	display: inline-block;
 	color: darkCyan;
-	font-family: "bauhaus 93";
+	font-family: "bauhaus 93", sans-serif;
 	font-weight: bold;
-	font-size: 2vw;
-	padding: 0;
-
-
-	
-}
-#welcome_text p{
-	padding: 0;
-	margin: 0;
+	font-size: 2rem;
 }
 
 
@@ -175,10 +191,14 @@ body{
 	display: inline-block;
 	margin-bottom: 5px;
 	width: 45%;
-	
-	
+}
+
+.welcome_ctner{
+    height: 50px;
+    display: block;
 }
 /*=======================MENU END===================*/
+
 
 /*==============homepic and courousel=================*/
 #navtrick{
@@ -187,10 +207,6 @@ body{
 	width: auto;
 }
 
-
-
-
-
 #homepic_img{
 	width: 200px;
 	height: 200px;
@@ -198,8 +214,7 @@ body{
 }
 
 .carousel-caption{
-	color: ;
-	font-family: "anton";
+	font-family: "anton", sans-serif;
 	font-size: 20px;
 
 }
@@ -221,6 +236,10 @@ body{
 	border: 1px solid white;
 	text-align: center;
 	
+}
+
+.carousel_profile_section .row{
+	margin: 0;
 }
 
 #carousel, #carousel div {
@@ -261,7 +280,7 @@ hr{
 	z-index: 10000;
 	top: 0;
 	left: 0;
-	background-color: rgb(0,0,0);
+	/*background-color: rgb(0,0,0);*/
 	background-color: rgba(0,0,0, 0.7);
 	overflow: hidden;
 	animation-name: animationtop;
@@ -280,14 +299,14 @@ hr{
 
 #mymodal_img_container{
 	width: 300px;
-	padding-top: 150px;
+	padding-top: 50px;
 	margin: auto;
 
 }
 	
 #mymodal1 img{
 	width: 300px;
-	height: auto;
+	height: 300px;
 	border: 10px solid white;
 	border-radius: 20px;
 	
@@ -308,7 +327,7 @@ hr{
 	background-color: ghostwhite;
 	border-radius: 10px;
 	padding: 5px;
-
+    margin: 10px;
 
 }
 
@@ -317,253 +336,121 @@ hr{
 	margin: 0;
 }
 
-#des-link{
+#geek_name{
 	font-family: 'Lobster', cursive;
 	color: black;
+    font-size: large;
 }
 
-/*======================services section=================*/
+/*======================about section=================*/
 
-#serv_sec{
+#page_about{
+	padding: 15px 25px 15px 15px;
 	background-color: #2F4F4F;
-	padding-bottom: 30px;
-	text-align: center;
+}
+
+#section_title{
+	padding-left: 25px;
 
 }
 
-#services_header{
-	font-family: 'Lobster', cursive;
-	text-transform: uppercase;
-	text-align: center;
-
-}
-
-#services_header_text{
-	width: 80%;
-	margin: 0px auto;
-}
-
-#services_offered {
-	margin: 1px auto;
-
-	
-}
-
-#services_offered  img{
-	width: 120px;
-	height: 80px;
-	margin: 40px auto;
+#section_title h2 {
+	line-height: 1px;
 	margin-bottom: 0;
+
 }
 
-#services_offered  hr{
-	width: 100px;	
+.mycaret {
+	color: black;
+	text-align: center;
+	display: inline-block;
+	margin-left: 4px;
 }
 
-#services_offered  h4{
-	width: 100px;
-	font-family: "book antiqua";
+#about_content{
+	padding: 20px;
 }
-
-#services_offered  p{
-	font-family: "verdana";
-	margin-bottom: 0px;
-	width: 20rem;
-	margin: 0px auto;
-	
-}
-
-#services_offered  button{
-	border-radius: 10px;
-	margin-top: 1px;
-	background-color: transparent;
-	border-color: black;
-	
-}
-
-#geeksh_img_container{
-	display: ;
-	width: 100%;
-	border: 2px solid white;
-	border-right: none;
-	border-left: none;
-}
-
-#geeksh_big_img{
-	
-	background: url('media/geeksh2.jpg');
-	background-size: contain;
-	background-position: center;
+#underline_bar{
 	position: relative;
-	background-size: cover;
-	border-bottom: 2px solid white;
-	width: 100%;
-	height: 100%;
-	font-size: 5rem;
-	margin: 0px;
-}
-
-
-
-#geeksh_img_content{
-	background-color: rgba(0,0,0,0.5);
-	text-align: center;
-	font-family: "serif";
-	font-weight: bold;
-	color: ghostwhite;	
-}
-#geeksh_img_content p{
-	margin-bottom: 0px;
-	padding-top: 2rem;
+	border-radius: 2px;
+	width: 90px;
+	height: 3px;
+	background-color: white;
+	margin: 30px auto;
 
 }
-#newsletters_input_container{
-	padding-right: 25%;
-	padding-left: 25%;
-	
-}
 
-#newsletters_input_container input{
+#line_cercle{
+	position: absolute;
+	width: 20px;
+	height: 20px;
 	border-radius: 10px;
-	text-align: center;
-	
-	
+	background-color: whitesmoke;
+	margin: -10px 40px auto 35px;
 }
 
-#newsletters_input_container label{
-	font-size: 2rem;
-	margin-top: 0;
-	padding-top: 0;
-	display: block;
+.about_content_reveal{ /*This ensures there's no flickering with the reveal effect*/
+	visibility: hidden;
 }
 
-#newsletters_input_container .glyphicon .glyphicon-envelope{
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
-.icon-prev, .icon-next{
-	background-color: white;
-	color: black;
-	display: inline-block;
-	border-radius: 50%;
-}
-
-/*================third section==========*/
-
-#th_section{
-	background-color: #FFF;
-	
-
-}
-
-#geek_laptop{
-	background-color: white;
-	z-index: 1000;
-}
-
-#laptop_bg_img{
-	width: 100%;
-	height: 20%;
-	margin: 5% auto;
-}
-
-#th_section .well{
-	color: black;
-	font-size: 1.5rem;
-	font-family: "Perpetua Titling MT Bold";
-	margin-top: 5%;
-	
-}
-
-
-#latest_production{
-	color: black;
-	background-color: ghostwhite;
-	text-align: center;
-
-}
-
-#latest_production h3{
-	text-align: center;
-	margin-bottom: 2rem;
-	font-family: lobster;
-}
-
-#latest_production .post_time{
-	font-size: 1rem;
-	
-}
-
-#latest_production hr{
-	width: 100%;
-	border-color: #2F4F4F ;
-}
-
-#latest_production p{
-	padding-bottom: 0px;
-	text-transform: uppercase;
-}
-
-#latest_video video{
-	width: 100%;
-	height: 230px;
-	border: 5px solid #2F4F4F;
+.myjumb{
+	background-color: rgba(0,0,0, 0.5);
+	margin: 5px;
 	border-radius: 5px;
-
+	padding: 5px;
 }
 
-.news_title{
-	color: #2F4F4F;
-}
-#foot{
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-footer{
-	padding-top: 20px;
-	background-color: #2F4F4F;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	height: 
-	
+/*==========TUTORIELS=========*/
+
+#page_tutos{
+	background-color:  rgba(255,255,255, 0.5) ;
+    margin-bottom: 500px;
+    height: auto;
 }
 
-.footer_link_contacts {
-	list-style-type: none;
-	text-decoration: none;
-	color: white;
+
+#page_tutos .row{
+    margin: 0;
 }
 
-.footer_link{
-	color: white;
-	display: inline-block;
-	margin: 3px;
-
+#tuto_container iframe{
+    width: 245px;
+    height: 30%;
 }
 
-.footer_link:hover{
-	text-decoration: none;
-	color: white;
+#tuto_container{
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
-.footer_title{
-	font-size: 2em;
-	font-family: "agency fb";
+#tuto_container .jumbotron{
+    padding: 5px;
+    margin: 0;
 }
 
-#footer_geeksh{
-	font-size: 8rem;
+#tuto_container div{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#tuto_container p a{
+    text-decoration: underline;
+    color: white;
+}
+#tuto_container p{
+    padding-left: 5px;
+	max-width: 260px;
+}
+
+#tuto_container p a:hover{
+    text-decoration: underline;
+    color: #2F4F4F;
+}
+
+#all_link_div	{
 	text-align: center;
-	
-	margin: 0px;
-	padding: 0px;
-	font-family: "ALGERIAN"
-}
+	width: 100%;
+    margin-top: 20px;
 
-.progress-bar{
-	width: 50%;
 }
