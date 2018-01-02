@@ -13,7 +13,7 @@
            <a href="#" class="nav-link hidden-md hidden-lg" id="geeksh_logo"> GEEKSH </a>
     </div>
 
-    <div id="search_section" class="col-lg-4 col-lg-offset-6 col-md-10 col-sm-8">
+    <div id="search_section" class="col-lg-4 col-lg-offset-6 col-md-10 col-sm-8 col-xs-12 pull-right">
         <form class="">
             <div class="input-group">
                 <input id="search_control" type="search" name="search_input" class="form-control input-sm" placeholder="recherche...">
@@ -26,11 +26,12 @@
 
     <div id="collapsing_ul" class="collapse navbar-collapse navbar-right col-lg-8 col-md-12 col-sm-12">
         <ul  class="nav navbar-nav">
-            <li id="active-link"  > <a href="#carousel_sec" class=" ">HOME</a> </li>
+            <li id="active-link"  > <a href="#welcome_section" class=" ">HOME</a> </li>
             <li class=""><a href="#page_about"  class="nav-link"> ABOUT</a></li>
             <li class=""><a href="#page_tutos" id="cc" >   TUTORIELS</a></li>
-            <li class=""><a href="#" > SERVICES</a></li>
-            <li class=""><a href="#"  class=" nav-link"> PORTFOLIO</a></li>
+            <li class=""><a href="#page_service" > SERVICES</a></li>
+            <li class=""><a href="#page_portfolio"  class=" nav-link"> PORTFOLIO</a></li>
+            <li class=""><a href="#page_contact"  class=" nav-link"> CONTACT</a></li>
         </ul>
 
     </div>

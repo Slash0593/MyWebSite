@@ -22,5 +22,6 @@ $(function() {
         var pos = $($(this).attr('href')).offset().top;
         $('body, html').animate({scrollTop:(pos-93)}, 1000);
     })
-	
+
+
 });
